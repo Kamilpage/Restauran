@@ -1,0 +1,15 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-15px {
+    gap: 15px;
+}
+
+.gap-30px {
+    gap: 30px;
+}
