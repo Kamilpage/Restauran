@@ -87,18 +87,6 @@ header {
     align-items: center;
 }
 
-.header-content__logo {}
-
-.checked {}
-
-.header-content__last {}
-
-.main-content {}
-
-.main-content_about {}
-
-.main-content__buttons {}
-
 .header-content__last {
     display: flex;
     align-items: center;
@@ -485,3 +473,33 @@ main {
     background-color: var(--black);
 
 }
+
+
+.menu-pag a {}
+
+.back {}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    background-color: rgba(255, 138, 0, 0.1);
+    padding: 11px 24px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 11px 24px;
+    border-radius: 15px;
+    color: #B7A28B;
+}
+
+.next {}
