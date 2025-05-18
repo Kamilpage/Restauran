@@ -834,3 +834,43 @@ h2 span {
     gap: 23px;
     margin-top: 50px;
 }
+
+/* FOOTER */
+.footer {
+    background-color: var(--black);
+
+    height: 691px;
+}
+
+.footer a {
+    text-decoration: none;
+    line-height: 200%;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.footer-info,
+a,
+{
+margin-top: 238px;
+}
+
+.footer__first-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+.logo-icon {}
+
+.logo-name {}
+
+.footer__second-part {}
+
+.footer__third-part {}
+
+.footer-forth-part {}
