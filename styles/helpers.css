@@ -13,3 +13,44 @@
 .gap-30px {
     gap: 30px;
 }
+
+.btn {
+    border-radius: 162px;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-default {
+    line-height: 55px;
+    padding: 0 36px;
+    font-size: 16px;
+
+}
+
+.btn-large {
+    line-height: 74px;
+    padding: 0 55px;
+    font-size: 20px;
+}
+
+.btn-bg-white {
+    background-color: #ffff;
+    color: var(--black);
+    line-height: 74px;
+    padding: 0 55px;
+    font-size: 20px;
+}
+
+.btn-bg-green {
+    border-radius: 162px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+}

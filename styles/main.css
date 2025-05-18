@@ -1,6 +1,7 @@
 @import url('./helpers.css');
 
 :root {
+
     --black: #311F09;
     --orange: #FF8A00;
     --green: #3FA72F;
@@ -20,6 +21,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
     margin: 0;
     padding: 0;
@@ -252,7 +255,7 @@ main {
 
 .menu {
     padding-top: 164px;
-    margin-bottom: 200px;
+    padding-bottom: 201px;
 }
 
 .menu h3 {
@@ -281,6 +284,12 @@ main {
     border-radius: 162px;
     transition: all .4s ease;
 }
+
+.main-content__buttons {
+    display: flex;
+    gap: 23px;
+}
+
 
 .menu-buttons .checked {
     background-color: var(--black);
@@ -456,7 +465,7 @@ main {
     /* или конкретная ширина */
 }
 
-.btn-default {
+/* .btn-default {
     background-color: var(--orange);
     color: #ffff;
     padding: 0 36px;
@@ -549,9 +558,11 @@ main {
 .p-bg-orange {
     background-color: rgba(255, 138, 0, 0.1);
 }
+
 .p-bg-brown {
     background-color: var(--black);
 }
+
 .p-bg-transparent {
     background-color: transparent;
 }
@@ -644,4 +655,182 @@ main {
     position: relative;
     right: 100px;
     top: 0;
+}
+
+
+h2 span {
+    color: var(--orange);
+}
+
+.reserve__description p {
+    line-height: 200%;
+    margin-top: 50px;
+    color: var(--black);
+    margin-right: 184px;
+}
+
+.reserve__description button {
+    margin-top: 132px;
+}
+
+
+/* OUR Chiefs */
+
+
+.chef-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.chef-unit {
+    display: inline-block;
+    margin-left: 50px;
+
+}
+
+.chef-unit:last-of-type {
+    margin-right: 0;
+}
+
+.chief-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 30px;
+}
+
+.chief-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A08D76;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.View-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 271px;
+}
+
+.cust-view__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    margin: 120px auto 57px;
+}
+
+.custumer-opinion {}
+
+.cus-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 41px;
+}
+
+.cus-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 200%;
+    color: var(--black);
+}
+
+.cus-role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A08D76;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.cus-opinion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+}
+
+.cus-opinion::before {
+    content: "“";
+    color: var(--black);
+    font-size: 80px;
+    margin: 0 9px 136px 0;
+}
+
+.cus-opinion::after {
+    content: "“";
+    color: var(--black);
+    font-size: 80px;
+    margin: 136px 0 0 9px;
+}
+
+.work-schedule__inner {
+
+    background-image: url(../assets/images/schedule-bg.png);
+
+    background-size: cover;
+    height: 588px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 80px;
+}
+
+.work-schedule__description {
+    color: #ffff;
+}
+
+.work-schedule__description h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 200%;
+    padding-top: 26px;
+
+}
+
+.schedule-info h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.schedule-info {
+    display: flex;
+    flex-direction: column;
+    width: 369px;
+}
+
+.schedule-info__description p {
+    display: flex;
+    line-height: 200%;
+}
+
+.schedule-info__description span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 200%;
+}
+
+.action-btn {
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-top: 50px;
 }
