@@ -49,6 +49,14 @@
     line-height: 74px;
     padding: 0 55px;
     font-size: 20px;
+    transition: all .4s ease;
+}
+
+.btn-bg-white:hover {
+    color: #fff;
+
+
+
 }
 
 .btn-bg-green {
@@ -59,4 +67,10 @@
     outline: none;
     font-weight: 600;
     cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn-bg-green:hover {
+    background-color: #000000;
+    transform: scale(1.1);
 }

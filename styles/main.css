@@ -26,6 +26,8 @@ h6,
 p {
     margin: 0;
     padding: 0;
+    font-family: "Tinos", sans-serif;
+    font-weight: 700;
 }
 
 * {
@@ -93,6 +95,32 @@ header {
     display: flex;
     align-items: center;
 }
+
+.header-content__last img {
+    background-color: #D0CCC7;
+    padding: 8px;
+    border-radius: 162.94px;
+}
+
+.header-content__last a:first-of-type {
+    position: relative;
+    display: inline-block;
+}
+
+.header-content__last a:first-of-type::after {
+    content: "3";
+    position: absolute;
+    right: 20px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    line-height: 1;
+
+}
+
 
 nav a {
     text-decoration: none;
@@ -320,7 +348,10 @@ main {
     padding: 35px 29px;
 }
 
-
+a {
+    color: var(--black);
+    text-decoration: none;
+}
 
 .menu-item__image {
     height: 271px;
@@ -621,6 +652,11 @@ main {
 
 .reserve__description {
     width: 50%;
+
+}
+
+.reserve__description h2 {
+    font-size: 80px;
 }
 
 .reserve__image-item__small {
@@ -673,11 +709,13 @@ h2 span {
 /* OUR Chiefs */
 
 
-.chef-header {
+.chef-header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 175px;
+    font-size: 80px;
+    margin-bottom: 135px;
 }
 
 .chef-unit {
@@ -723,6 +761,9 @@ h2 span {
     margin: 120px auto 57px;
 }
 
+.cust-view__header h2 {
+    font-size: 80px;
+}
 
 .cus-img {
     display: flex;
@@ -840,6 +881,7 @@ h2 span {
     display: flex;
     flex-direction: column;
     width: 369px;
+    margin: auto;
 }
 
 .schedule-info__description p {
@@ -881,10 +923,20 @@ h2 span {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
+    font-family: "Tinos", sans-serif;
 }
 
 .footer__first-part {
     flex: 1 1 250px;
+}
+
+.logo-name-part {
+    display: flex;
+    gap: 18px;
+}
+
+.header-logo {
+    color: var(--black);
 }
 
 .logo-icon span {
@@ -896,7 +948,7 @@ h2 span {
     text-align: center;
     line-height: 200%;
     font-size: 20px;
-    margin-right: 10px;
+
 }
 
 .logo-name {
@@ -914,7 +966,7 @@ h2 span {
 
 .logo-name span {
     color: var(--orange);
-    margin-left: 4px;
+
 }
 
 .footer__first-part p {
