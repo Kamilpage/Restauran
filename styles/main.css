@@ -23,12 +23,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-{
-margin: 0;
-padding: 0;
-font-family: "Tinos", sans-serif;
-font-weight: 700;
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Tinos", sans-serif;
+    font-weight: 700;
 }
 
 * {
@@ -96,40 +95,59 @@ header {
 .header-content__last {
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 
-.header-content__last img {
-    background-color: #a09f9f;
-    padding: 8px;
-    border-radius: 162.94px;
-    transition: all .4s ease;
-}
-
-.header-content__last img:hover {
-    background-color: var(--orange);
-    transform: scale(1.1);
-
-}
-
-
-
-.header-content__last a:first-of-type {
+.busket {
+    width: 50px;
+    height: 50px;
+    border-radius: 162px;
+    background-color: rgba(208, 204, 199, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    display: inline-block;
+    transition: all .4s ease;
+    cursor: pointer;
 }
 
-.header-content__last a:first-of-type::after {
-    content: "3";
-    position: absolute;
-    right: 20px;
-    background-color: red;
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 50%;
-    line-height: 1;
+.busket:hover {
+    transform: scale(1.1);
+    background-color: var(--orange);
 
+}
+
+.busket:hover svg path {
+    stroke: #ffff;
+}
+
+.busket:hover svg circle {
+    stroke: #ffff;
+}
+
+
+.busket__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busket__notification {
+    position: absolute;
+    top: 0px;
+    font-weight: 500;
+    font-size: 8px;
+    background-color: #FF3838;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffff;
+    text-align: center;
+    top: 7px;
+    right: 3px;
 }
 
 
@@ -149,10 +167,6 @@ nav a.checked {
     color: var(--orange);
 }
 
-.header-content__last img {
-    margin-right: 25px;
-
-}
 
 .header-content__last a:last-of-type {
     background-color: var(--green);
@@ -721,11 +735,30 @@ h2 span {
     align-items: center;
     color: var(--black);
     margin: 120px auto 57px;
+
 }
 
 .cust-view__header h2 {
     font-size: 80px;
 }
+
+.cust-view {
+    position: relative;
+}
+
+.cust-view__background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/images/cust-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+
 
 .cus-img {
     display: flex;
@@ -790,7 +823,7 @@ h2 span {
     overflow: hidden;
     position: relative;
     background-image: url(../assets/images/schedule-bg.png);
-
+    margin-top: 238px;
     background-size: cover;
     height: 588px;
     background-repeat: no-repeat;
@@ -922,9 +955,9 @@ h2 span {
 .logo-name {
     display: flex;
     align-items: baseline;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
 }
 
 .logo-name p {
@@ -941,9 +974,13 @@ h2 span {
 
 }
 
+.footer__first-part {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
 .footer__first-part p {
-    margin-top: 15px;
-    font-size: 20px;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
     color: #ccc;
